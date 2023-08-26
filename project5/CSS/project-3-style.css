@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+    background-image: url("/project5/media/background2.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+    
+}   
+
+header {
+    text-align: center;
+    color: rgb(24, 24, 23);
+}
+header p {
+    text-shadow: 1px 1px 10px rgb(119, 153, 130);
+}
+h1 {
+    font-size: 75px;
+    text-shadow: 3px 3px 10px rgb(119, 153, 130);
+}
+nav {
+    text-align: center; 
+    background-color: #878274e9;
+    border-radius: 75%;
+    font-size: larger;
+    animation-name: open;
+    animation-duration: 4s;
+    padding-top: .5px;
+    padding-bottom: 1px;
+    box-shadow: 1px 1px 3px black;
+}
+@keyframes open {
+    from {background-color: rgba(0, 0, 0, 0.153);}
+    to {background-color: #878274e9;}
+  }
+nav ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #B87C4C ;
+    font-size: 30px;
+    text-shadow: 1px 1px 3px black;
+}
+a :hover, a :active {font-size: 125%;}
+nav li {
+    display: inline;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+#container {
+    margin: 0 auto;
+    width: 1000px;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+}
+
+h2 {
+    text-align: center;
+    text-shadow: 3px 3px 10px lightslategray;
+    font-size: 30px;
+}
+
+
+.content {
+    background-color: #878274df;
+    text-align: center;
+    box-shadow: 5px 5px 30px black;
+    border-radius: 25px;
+    margin: 1px;
+    padding: 50px;
+    font-size: large;
+    font-family: 'Playfair Display', serif;
+    animation-name: open;
+    animation-duration: 4s;
+    
+}
+#containerflex {
+    display: flex;
+    width: 1000px;
+    height: 400px;
+    justify-content: space-around;
+
+}
+.box {
+    display:flex;
+}
+
+.img {
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black ;
+}
+
+.button:hover { background-color: #B87C4C;}
+.button:hover, button :active {font-size: 110%;}
+/*
+Media queries are a work in progress.
+
+@media (max-width: 768px ) {
+    .wrapper {
+        margin: 50px;
+        text-align: center;
+        width: max-content;
+}
+    p {
+        font-size: 2rem;
+    }
+    img {
+        width: fit-content
+    }
+}
+*/
